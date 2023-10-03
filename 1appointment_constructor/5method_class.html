@@ -1,0 +1,21 @@
+<script>
+    class Pearson{
+        constructor(fullName,age){
+            this.fullName = fullName;
+            this.age = age;
+        }
+
+        setAge(newAge){
+            this.age = newAge;
+        }
+
+        getAge(){
+            return this.age; 
+        }
+    }
+
+    let newPerson = new Person("annuyadav",21);
+    newPerson.setAge(22);
+    console.log(newPerson.getAge());
+    console.log(newPerson.fullName,newPerson.age); 
+</script>
