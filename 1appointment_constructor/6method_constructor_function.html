@@ -1,0 +1,21 @@
+<script>
+    function person(fullName,age){
+        this.fullName = fullName;
+        this.age = age;
+
+        this.setAge = function(newAge){
+            this.age = newAge;
+        }
+
+        this.getAge = function(){
+            return this.age;
+        }
+    }
+
+    let newPerson = new person("dharmishth",1);
+
+    console.log(newPerson);
+    console.log(setAge(2));
+    console.log(akashPerson.getAge());
+    console.log(akashPerson.age);
+</script>
