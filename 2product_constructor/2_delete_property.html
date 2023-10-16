@@ -1,0 +1,18 @@
+<script>
+let obj = {
+    name:"annu",
+    age:21,
+    favMusic: "mai jinda hu lekin kaha jindagi hai",
+    getFullName:function(){
+        return this.name;
+    }
+}
+//delete obj.age;
+//delete obj.name;
+let input = 'age';
+delete obj[input];
+delete obj['getFullName']
+console.log(obj);
+
+console.log(obj.age);
+</script>
