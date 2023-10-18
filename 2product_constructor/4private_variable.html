@@ -1,0 +1,20 @@
+<script>
+    function Person(age){
+        let name = "annu"; //this is private variable
+        this.age = age;
+
+        this.setName = function(fullName){
+            name = fullName;
+        }
+
+        this.getName = function(){
+            return name;
+        }
+    }
+    let person1 = new Person(21);
+    person1.setName("annu");
+    console.log(person1.name);//it will give undefined
+    console.log(person1.getName());
+
+    // console.log(this.age);
+</script>
