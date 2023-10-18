@@ -1,0 +1,15 @@
+<script>
+    function Person(fullName){
+        this.fullName = fullName;
+        // private method
+        const dsplay = function(){
+            console.log("hello");
+        }
+
+        this.publicDetails = function(){
+            return dsplay();
+        }
+    }
+    let p1 = new Person("annu");
+    p1.publicDetails();
+</script>
