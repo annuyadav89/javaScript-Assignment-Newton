@@ -1,0 +1,18 @@
+<script>
+    function sum_of_arr(arr,callback){
+        var sum = 0;
+        for (var i = 0; i < arr.length; i++) {
+           sum += arr[i];
+        }
+        callback(sum);
+    }
+    function addition_result(input){
+        console.log("final value of this  addition function",input);
+    }
+    function subtraction_result(input){
+        console.log("final value of this subtraction function",input);
+    }
+    sum_of_arr([33,44,55],addition_result);
+    sum_of_arr([33,44,55],subtraction_result);
+
+</script>

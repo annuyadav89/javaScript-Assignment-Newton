@@ -1,0 +1,16 @@
+<script>
+    function findMissingNumber(arrayOfIntegers, upperBound, lowerBound) {
+
+        for(var i=lowerBound;i<=upperBound;i++){
+            var input = arrayOfIntegers.find(function(obj){
+                  return obj === i;
+            })
+            if(!input){
+                console.log(i);
+                break;
+            }
+        }
+
+    }
+    findMissingNumber([1, 4, 3], 4, 1);
+</script>
